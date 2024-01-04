@@ -1,10 +1,10 @@
-function Statistics({ numberOfCharacters }) {
+function Statistics({ stats }) {
     return (
         <section className="statistics">
-            <Statistic number={numberOfCharacters} label={"Words"} />
-            <Statistic number={0} label={"Characters"} />
-            <Statistic number={280} label={"Instagram"} />
-            <Statistic number={2200} label={"Facebook"} />
+            <Statistic number={stats.numberOfWords} label={"Words"} />
+            <Statistic number={stats.numberOfCharacters} label={"Characters"} />
+            <Statistic number={stats.instagramCharactersLeft} label={"Instagram"} />
+            <Statistic number={stats.facebookCharactersLeft} label={"Facebook"} />
         </section>
     )
 }
